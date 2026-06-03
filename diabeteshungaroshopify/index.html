@@ -1,0 +1,917 @@
+﻿<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="max-image-preview:large">
+    <title>Diéta cukorbetegeknek – Smart Select</title>
+    <script>document.title = "Diéta cukorbetegeknek – Smart Select";</script>
+    <link rel="icon" href="https://bookworldlibrary.com/wp-content/uploads/2025/12/cropped-fav-32x32.png" sizes="32x32">
+    <style>
+        :root {
+            --wp--preset--color--base: #f9f9f9;
+            --wp--preset--color--base-2: #ffffff;
+            --wp--preset--color--contrast: #111111;
+            --wp--preset--color--contrast-2: #636363;
+            --wp--preset--font-size--small: 0.9rem;
+            --wp--preset--font-size--medium: 1.05rem;
+            --wp--preset--font-size--large: clamp(1.39rem, 1.39rem + ((1vw - 0.2rem) * 0.767), 1.85rem);
+            --wp--preset--font-size--x-large: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem);
+            --wp--preset--font-size--xx-large: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 1.283), 3.27rem);
+            --wp--preset--font-family--system-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+            --wp--preset--spacing--20: perc(1.5rem, 2vw);
+            --wp--preset--spacing--30: perc(2.5rem, 3vw);
+            --wp--preset--spacing--40: perc(4rem, 5vw);
+            --wp--preset--spacing--50: perc(6.5rem, 8vw);
+            --wp--preset--spacing--60: perc(10.5rem, 13vw);
+            --wp--preset--spacing--10: 1rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--style--global--content-size: 620px;
+            --wp--style--global--wide-size: 1280px;
+            --wp--style--block-gap: 1.2rem;
+            --wp--style--root--padding-top: 0px;
+            --wp--style--root--padding-right: var(--wp--preset--spacing--50);
+            --wp--style--root--padding-bottom: 0px;
+            --wp--style--root--padding-left: var(--wp--preset--spacing--50);
+        }
+        * {
+            box-sizing: border-box;
+        }
+        :where(body) {
+            margin: 0;
+        }
+        body {
+            background-color: var(--wp--preset--color--base);
+            color: var(--wp--preset--color--contrast);
+            font-family: var(--wp--preset--font-family--system-sans-serif);
+            font-size: var(--wp--preset--font-size--medium);
+            font-weight: 400;
+            line-height: 1.55;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--wp--preset--color--contrast);
+            font-family: var(--wp--preset--font-family--system-sans-serif);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        a {
+            color: var(--wp--preset--color--base-2);
+        }
+        img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: bottom;
+        }
+        figure {
+            margin: 0;
+        }
+        .wp-site-blocks {
+            padding-top: var(--wp--style--root--padding-top);
+            padding-bottom: var(--wp--style--root--padding-bottom);
+        }
+        .has-global-padding {
+            padding-right: var(--wp--style--root--padding-right);
+            padding-left: var(--wp--style--root--padding-left);
+        }
+        .has-global-padding>.alignfull {
+            margin-right: calc(var(--wp--style--root--padding-right) * -1);
+            margin-left: calc(var(--wp--style--root--padding-left) * -1);
+        }
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+        .is-layout-constrained>.alignfull {
+            max-width: 100%;
+        }
+        .is-layout-flow>* {
+            margin-block-start: var(--wp--style--block-gap);
+            margin-block-end: 0;
+        }
+        .is-layout-flow> :first-child {
+            margin-block-start: 0;
+        }
+        .is-layout-flow> :last-child {
+            margin-block-end: 0;
+        }
+        .is-layout-flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--wp--style--block-gap);
+        }
+        .is-layout-flex>* {
+            margin: 0;
+        }
+        body .is-layout-flex {
+            display: flex;
+        }
+        .has-text-align-center {
+            text-align: center;
+        }
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+        .has-xx-large-font-size {
+            font-size: var(--wp--preset--font-size--xx-large) !important;
+        }
+        .has-base-2-color {
+            color: var(--wp--preset--color--base-2) !important;
+        }
+        .has-contrast-2-color {
+            color: var(--wp--preset--color--contrast-2) !important;
+        }
+        mark.has-inline-color {
+            background: none;
+        }
+        /* Countdown sticky */
+        .ip-countdown-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            padding: 12px 15px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .countdown-label {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin: 0;
+        }
+        .countdown-cards {
+            display: inline-flex;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            gap: 0;
+        }
+        .time-group {
+            display: inline-block;
+            text-align: center;
+            margin: 0 2px;
+            vertical-align: top;
+        }
+        .time-card {
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 22px;
+            font-family: Arial, sans-serif;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin: 0 1px;
+            border: 1px solid #000000;
+            display: inline-block;
+            font-weight: bold;
+            line-height: 1;
+            vertical-align: top;
+        }
+        .time-separator {
+            font-size: 22px;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 0 4px;
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1;
+            padding-top: 4px;
+        }
+        .time-label {
+            display: block;
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            font-style: italic;
+            margin-top: 4px;
+            line-height: 1;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .time-card {
+                font-size: 18px;
+                padding: 3px 7px;
+            }
+            .time-separator {
+                font-size: 18px;
+            }
+            .time-label {
+                font-size: 11px;
+            }
+        }
+        /* Buttons */
+        :where(.wp-element-button, .wp-block-button__link) {
+            background-color: #01bc00;
+            border-radius: 20px;
+            border: 0;
+            color: #ffffff;
+            font-family: var(--wp--preset--font-family--system-sans-serif);
+            font-size: var(--wp--preset--font-size--medium);
+            font-weight: 500;
+            padding-top: 0.6rem;
+            padding-right: 1rem;
+            padding-bottom: 0.6rem;
+            padding-left: 1rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .wp-block-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        .wp-block-buttons.is-content-justification-center {
+            justify-content: center;
+        }
+        .wp-block-buttons>.wp-block-button {
+            display: inline-block;
+            margin: 0;
+        }
+        .wp-block-button__link {
+            display: inline-block;
+            text-align: center;
+            word-break: break-word;
+            box-shadow: var(--wp--preset--shadow--deep);
+        }
+        .wp-block-buttons>.wp-block-button.wp-block-button__width-75 {
+            width: 75%;
+        }
+        .wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link {
+            width: 100%;
+        }
+        :where(.wp-block-button__link) {
+            border-radius: 9999px;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            text-decoration: none;
+        }
+        /* Images */
+        .wp-block-image img {
+            width: 100%;
+            height: auto;
+        }
+        .wp-block-image.alignfull img,
+        .wp-block-image.aligncenter img {
+            width: 100%;
+            height: auto;
+        }
+        .alignfull {
+            width: 100%;
+            max-width: 100%;
+        }
+        .aligncenter {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Separator */
+        .wp-block-separator {
+            border: none;
+            border-top: 1px solid;
+            width: 100%;
+        }
+        .wp-block-separator.is-style-wide {
+            width: 100%;
+        }
+        .wp-block-separator.has-alpha-channel-opacity {
+            opacity: 0.4;
+        }
+        /* Spacer */
+        .wp-block-spacer {
+            clear: both;
+        }
+        /* Group */
+        .wp-block-group {
+            box-sizing: border-box;
+        }
+        /* Gallery */
+        .wp-block-gallery.has-nested-images {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: normal;
+        }
+        .wp-block-gallery.has-nested-images figure.wp-block-image {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            max-width: 100%;
+            width: 100%;
+        }
+        .wp-block-gallery.has-nested-images figure.wp-block-image img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
+        .wp-block-gallery-2 {
+            gap: var(--wp--preset--spacing--10) 0;
+        }
+        /* Columns */
+        .wp-block-columns {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap !important;
+            margin-bottom: 1.75em;
+        }
+        @media (perc-width: 782px) {
+            .wp-block-columns {
+                flex-wrap: nowrap !important;
+            }
+        }
+        .wp-block-column {
+            flex-grow: 1;
+            perc-width: 0;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+        @media (max-width: 781px) {
+            .wp-block-columns>.wp-block-column {
+                flex-basis: 100% !important;
+            }
+        }
+        /* ===== MOBILE FIXES ===== */
+        html,
+        body {
+            overflow-x: hidden !important;
+        }
+        @media (max-width: 768px) {
+            body {
+                --wp--style--root--padding-right: 0px !important;
+                --wp--style--root--padding-left: 0px !important;
+                max-width: 100vw !important;
+            }
+            .wp-site-blocks,
+            main.wp-block-group {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            .entry-content.wp-block-post-content {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+                box-sizing: border-box !important;
+                max-width: 100vw !important;
+                overflow-x: hidden !important;
+            }
+            /* alignfull images borda a borda */
+            .wp-block-image.alignfull,
+            figure.wp-block-image.alignfull {
+                margin-left: -16px !important;
+                margin-right: -16px !important;
+                width: calc(100% + 32px) !important;
+                max-width: calc(100% + 32px) !important;
+                box-sizing: border-box !important;
+            }
+            .wp-block-image.alignfull img,
+            figure.wp-block-image.alignfull img,
+            .wp-block-image img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+                max-width: 100% !important;
+            }
+            /* Gallery full width */
+            figure.wp-block-image.aligncenter,
+            figure.wp-block-image.alignfull {
+                margin-left: -16px !important;
+                margin-right: -16px !important;
+                width: calc(100% + 32px) !important;
+            }
+            figure.wp-block-image.aligncenter img,
+            figure.wp-block-image.alignfull img {
+                width: 100% !important;
+                height: auto !important;
+            }
+            /* Font scaling */
+            .has-x-large-font-size {
+                font-size: 1.4rem !important;
+            }
+            .has-xx-large-font-size {
+                font-size: 1.6rem !important;
+            }
+            .has-large-font-size {
+                font-size: 1.2rem !important;
+            }
+            /* Remove excess margins */
+            p[style*="margin-right:var(--wp--preset--spacing--60)"],
+            p[style*="margin-left:var(--wp--preset--spacing--60)"],
+            p[style*="margin-right:var(--wp--preset--spacing--50)"],
+            p[style*="margin-left:var(--wp--preset--spacing--50)"] {
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+            }
+            p[style*="padding-right:var(--wp--preset--spacing--40)"],
+            p[style*="padding-left:var(--wp--preset--spacing--40)"],
+            p[style*="padding-right:var(--wp--preset--spacing--50)"],
+            p[style*="padding-left:var(--wp--preset--spacing--50)"] {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+            /* Button full width */
+            .wp-block-button.has-custom-width.wp-block-button__width-75 {
+                width: 100% !important;
+            }
+            .wp-block-button__link {
+                width: 100% !important;
+                font-size: 1.1rem !important;
+                padding: 14px 20px !important;
+                box-sizing: border-box !important;
+            }
+            /* Footer stacked */
+            .wp-block-columns[style*="flex-wrap:nowrap"] {
+                flex-wrap: wrap !important;
+            }
+            .wp-block-column[style*="flex-basis:30%"],
+            .wp-block-column[style*="flex-basis:50%"] {
+                flex-basis: 100% !important;
+                text-align: center;
+            }
+            .wp-block-navigation__container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        /* ===== END MOBILE FIXES ===== */
+        /* Navigation */
+        .wp-block-navigation__container {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        .wp-block-navigation-item__content {
+            color: var(--wp--preset--color--contrast);
+            text-decoration: none;
+        }
+        .wp-block-navigation-item__content:hover {
+            text-decoration: underline;
+        }
+        /* Site title / tagline */
+        .wp-block-site-title {
+            font-size: clamp(0.875rem, 0.875rem + ((1vw - 0.2rem) * 0.542), 1.2rem);
+            font-weight: 600;
+        }
+        .wp-block-site-title a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .wp-block-site-tagline {
+            color: var(--wp--preset--color--contrast-2);
+            font-size: var(--wp--preset--font-size--small);
+        }
+        /* Footer */
+        footer .wp-block-group {
+            padding-top: var(--wp--preset--spacing--50);
+            padding-bottom: var(--wp--preset--spacing--50);
+        }
+        /* Container group inner layout */
+        .wp-container-core-group-is-layout-5a338822>* {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        .wp-container-core-group-is-layout-5a338822>*+* {
+            margin-block-start: var(--wp--preset--spacing--30);
+            margin-block-end: 0;
+        }
+        /* Post content */
+        .wp-block-post-content {
+            display: flow-root;
+        }
+        .emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+        /* Countdown button bg */
+        .wp-container-core-buttons-is-layout-db7e7d63 {
+            gap: 0;
+            justify-content: center;
+        }
+                        /* ===== DESKTOP CENTERING FIX ===== */
+        @media (perc-width: 769px) {
+            /* 1. Enable Immersive Full-Width Containers */
+            .entry-content.wp-block-post-content {
+                max-width: 100% !important;
+                width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                margin: 0 !important;
+                box-sizing: border-box !important;
+            }
+            /* 2. TOTAL CATCH-ALL: Center EVERYTHING by default unless Full-Width */
+            .entry-content.wp-block-post-content > *:not(.alignfull):not(.alignwide) {
+                max-width: 800px !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                box-sizing: border-box !important;
+            }
+            /* 3. Unleash pure full-width sections */
+            .entry-content.wp-block-post-content > .alignfull, 
+            .entry-content.wp-block-post-content > .wp-block-group.alignfull {
+                width: 100% !important;
+                max-width: 100% !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            /* 4. Recursive nested element constraint to keep interior contents centered */
+            .entry-content.wp-block-post-content .wp-block-group.alignfull > *:not(.wp-block-image):not(.alignfull) {
+                 max-width: 800px !important;
+                 margin-left: auto !important;
+                 margin-right: auto !important;
+                 padding-left: 20px !important;
+                 padding-right: 20px !important;
+                 box-sizing: border-box !important;
+            }
+            /* 5. Preserve nested full-width images inside special sections */
+            .entry-content.wp-block-post-content .wp-block-group.alignfull figure.wp-block-image,
+            .entry-content.wp-block-post-content .wp-block-group.alignfull figure.wp-block-image img {
+                 max-width: 100% !important;
+                 width: 100% !important;
+            }
+            /* 6. Finalize standard layout boundaries */
+            footer .wp-block-group {
+                max-width: 1200px !important;
+                margin: 0 auto !important;
+            }
+        }
+        /* ===== HIDE SHOPIFY THEME HEADER/FOOTER AND SPACINGS ===== */
+        .shopify-section-group-header-group, 
+        .shopify-section-group-footer-group,
+        [class*="header-group"],
+        [class*="footer-group"],
+        [id*="shopify-section-header"],
+        [id*="shopify-section-footer"],
+        .shopify-section-header,
+        .shopify-section-footer,
+        .site-header,
+        .site-footer,
+        .announcement-bar,
+        #shopify-section-announcement-bar,
+        .shopify-section-utility-bar,
+        #shopify-section-utility-bar,
+        .main-page-title {
+            display: none !important;
+        }
+        [id*="shopify-section-"],
+        .shopify-section,
+        [class*="custom-liquid"],
+        [class*="custom_liquid"],
+        [class*="custom-liquid-padding"],
+        [class*="custom_liquid-padding"],
+        [class*="template--"][class*="-padding"],
+        #MainContent,
+        main,
+        main.wp-block-group,
+        .wp-site-blocks,
+        .wp-site-blocks > main,
+        .main-content,
+        .page-width,
+        .gradient,
+        .wrapper,
+        #page,
+        .page-container {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            max-width: 100% !important;
+            width: 100% !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        [id*="shopify-section-"],
+        .shopify-section,
+        [class*="custom-liquid"],
+        [class*="custom_liquid"],
+        [class*="custom-liquid-padding"],
+        [class*="custom_liquid-padding"],
+        [class*="template--"][class*="-padding"],
+        #MainContent,
+        .main-content,
+        .page-width,
+        .gradient,
+        .wrapper,
+        #page,
+        .page-container {
+            background: transparent !important;
+            background-color: transparent !important;
+        }
+        html, body {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        html {
+            background-color: #e42628 !important; /* matches countdown sticky red */
+        }
+        body {
+            background-color: #fec259 !important; /* matches landing page yellow */
+        }
+        /* ===== FORCE BASE FONT SIZES AND FAMILIES FOR STANDALONE FEEL ===== */
+        html {
+            font-size: 16px !important;
+        }
+        .wp-site-blocks p:not([class*="-font-size"]),
+        .wp-site-blocks li:not([class*="-font-size"]),
+        .wp-site-blocks a:not([class*="-font-size"]),
+        .wp-site-blocks span:not([class*="-font-size"]),
+        .wp-site-blocks div:not([class*="-font-size"]) {
+            font-family: var(--wp--preset--font-family--system-sans-serif) !important;
+            font-size: var(--wp--preset--font-size--medium) !important;
+            line-height: 1.55 !important;
+        }
+        .wp-site-blocks h1,
+        .wp-site-blocks h2,
+        .wp-site-blocks h3,
+        .wp-site-blocks h4,
+        .wp-site-blocks h5,
+        .wp-site-blocks h6 {
+            font-family: var(--wp--preset--font-family--system-sans-serif) !important;
+            line-height: 1.2 !important;
+        }
+        /* ===== FORCE SOLID DARK TEXT COLOR (OVERRIDING SHOPIFY TRANSPARENCY/GRAY) ===== */
+        .wp-site-blocks p:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks li:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks a:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks span:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks div:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks h1:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks h2:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks h3:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks h4:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks h5:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks h6:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks strong:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]),
+        .wp-site-blocks em:not([class*="-color"]):not([style*="color"]):not([class*="countdown"]):not([class*="time"]) {
+            color: #111111 !important;
+        }
+        /* ===== FORCE ORIGINAL STICKY COUNTDOWN TEXT COLORS ===== */
+        .ip-countdown-sticky,
+        .ip-countdown-sticky .countdown-label,
+        .ip-countdown-sticky .time-separator,
+        .ip-countdown-sticky .time-label {
+            color: #ffffff !important;
+        }
+        .ip-countdown-sticky .time-card {
+            color: #000000 !important;
+        }
+    </style>
+</head>
+<body class="wp-singular page-template-wp-custom-template-diabetic-new wp-theme-twentytwentyfour">
+    <div class="wp-site-blocks">
+        <main class="wp-block-group has-background is-layout-flow wp-block-group-is-layout-flow"
+            style="background-color:#fec259" id="wp--skip-link--target">
+            <!-- COUNTDOWN STICKY -->
+            <div class="ip-countdown-sticky" style="background-color:#e42628;">
+                <div class="countdown-label">⏰ UTOLSÓ ÓRÁK – A 70%-OS KEDVEZMÉNY MINDJÁRT VÉGET ÉR</div>
+                <span class="countdown-cards">
+                    <span class="time-group">
+                        <span class="time-card" id="h1">0</span><span class="time-card" id="h2">5</span>
+                        <span class="time-label">óra</span>
+                    </span>
+                    <span class="time-separator">:</span>
+                    <span class="time-group">
+                        <span class="time-card" id="m1">0</span><span class="time-card" id="m2">9</span>
+                        <span class="time-label">perc</span>
+                    </span>
+                    <span class="time-separator">:</span>
+                    <span class="time-group">
+                        <span class="time-card" id="s1">5</span><span class="time-card" id="s2">5</span>
+                        <span class="time-label">mp</span>
+                    </span>
+                </span>
+            </div>
+            <script>
+                (function () {
+                    var total = 5 * 60;
+                    function pad(n) { return n < 10 ? '0' + n : '' + n; }
+                    function tick() {
+                        if (total < 0) total = 0;
+                        var h = pad(Math.floor(total / 3600));
+                        var m = pad(Math.floor((total % 3600) / 60));
+                        var s = pad(total % 60);
+                        document.getElementById('h1').textContent = h[0];
+                        document.getElementById('h2').textContent = h[1];
+                        document.getElementById('m1').textContent = m[0];
+                        document.getElementById('m2').textContent = m[1];
+                        document.getElementById('s1').textContent = s[0];
+                        document.getElementById('s2').textContent = s[1];
+                        if (total > 0) total--;
+                    }
+                    tick();
+                    setInterval(tick, 1000);
+                })();
+            </script>
+            <!-- MAIN CONTENT -->
+            <div
+                class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+                <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-x-large-font-size"><em>Elmúlt 60 éves, és küzd a vércukorszintje szabályozásával, miközben nem szeretne lemondani kedvenc ételeiről?</em></p>
+                <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-medium-font-size">Ha IGEN, olvasson tovább…</p>
+                <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                <figure class="wp-block-image alignfull size-full has-custom-border">
+                    <img fetchpriority="high" decoding="async" width="1080" height="1080" src="{{ 'diabetes_IMAGE1_hu.png' | file_url }}"
+                        alt="A legegyszerűbb diéta cukorbetegeknek 60 felett – termékfotó"
+                        style="border-style:none;border-width:0px;">
+                </figure>
+                <p class="has-text-align-center has-x-large-font-size" style="margin-right:0;margin-left:0"><strong>A legegyszerűbb
+                        diéta cukorbetegeknek 60 felett</strong></p>
+                <p class="has-text-align-center has-x-large-font-size"
+                    style="margin-right:var(--wp--preset--spacing--50);margin-left:var(--wp--preset--spacing--50)">⭐⭐⭐⭐⭐
+                </p>
+                <p class="has-text-align-center has-medium-font-size">
+                    <strong>7900 Ft </strong>
+                    <mark style="background-color:rgba(0,0,0,0);color:#e42628;"
+                        class="has-inline-color"><s>23900 Ft</s></mark>
+                    Megtakarítás: 70%
+                </p>
+                <div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+                <div class="wp-block-buttons has-custom-font-size has-medium-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-db7e7d63"
+                    style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)">
+                    <div class="wp-block-button has-custom-width wp-block-button__width-75">
+                        <a class="wp-block-button__link has-background wp-element-button"
+                            href="/hu/cart/43091192959041:1"
+                            style="border-radius:20px;background-color:#01bc00;box-shadow:var(--wp--preset--shadow--deep);color:#ffffff !important;"><strong style="color:#ffffff !important;">VÁSÁROLJON MOST</strong></a>
+                    </div>
+                </div>
+                <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-large-font-size"><strong>VÁSÁROLJON 1-ET, KAPJON 3-AT</strong></p>
+                <p class="has-text-align-center has-medium-font-size">Csak korlátozott ideig – íme, amit kap:
+                </p>
+                <figure class="wp-block-image alignfull size-large">
+                    <img decoding="async" width="1024" height="587" src="{{ 'diabetes_IMAGE2_hu.png' | file_url }}"
+                        alt="3 könyves csomag – Diéta cukorbetegeknek">
+                </figure>
+                <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+                <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-large-font-size"><strong>Úgy gondolja, hogy unalmas, íztelen ételeket kell ennie ahhoz, hogy 60 év felett kontrollálja a cukorbetegségét?</strong></p>
+                <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-medium-font-size"><strong>Gondolja újra.</strong></p>
+                <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-medium-font-size">Az igazság az, hogy a legtöbb időskori cukorbeteg étrend <em>túl szigorú</em>, és csak frusztrációt, éhséget és levertséget okoz.</p>
+                <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-medium-font-size">Valószínűleg azt mondták Önnek, hogy mondjon le a szénhidrátokról, áldozza fel az ízeket, vagy felejtse el örökre a kedvenc ételeit.</p>
+                <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                <p class="has-text-align-center has-medium-font-size"><strong>Mi lenne, ha a vércukorszint szabályozása nem lenne büntetés?</strong> A <em>Legegyszerűbb diéta cukorbetegeknek 60 felett</em> segítségével felfedezheti, hogy a cukorbetegség melletti egészséges táplálkozás nem jelent lemondást — olyan okos, tudományosan alátámasztott döntémpről szól, amelyek támogatják a testét, az energiáját és a 60 feletti életét. Ez az könnyen érthető útmutató eloszlatja a tévhiteket, és pontosan megadja azt, amire szüksége van ahhoz, hogy jól étkezzen, jól éljen és visszanyerje az irányítást az egészsége felett — anélkül, hogy órákat töltene a konyhában, vagy íztelen ételekre hagyatkozna.
+                </p>
+                <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                <figure class="wp-block-image alignfull size-full">
+                    <img decoding="async" width="970" height="600" src="{{ 'diabetes_IMAGE3_hu.jpg' | file_url }}"
+                        alt="Életmód a cukorbetegek étrendjében">
+                </figure>
+                <!-- FEATURED SECTION (yellow bg) -->
+                <div class="wp-block-group alignfull preview-opacity has-background is-layout-flow wp-container-core-group-is-layout-5a338822 wp-block-group-is-layout-flow"
+                    style="background-color:#fec259;margin-top:0;margin-bottom:80px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center has-x-large-font-size"
+                        style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+                        <strong>Ez a bestseller tartalma:</strong>
+                    </p>
+                    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center">✅ <strong>Egyszerű, lépésről lépésre követhető étrend cukorbetegeknek</strong>, kifejezetten 60 év felettieknek tervezve</p>
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center">✅ <strong>Könnyen elkészíthető receptek</strong> percdennapi alapanyagokból (különleges vagy drága termékek nélkül!)</p>
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center">✅ <strong>Táplálkozási tanácsok</strong>, amelyek együttműködnek az öregedő metabolizmusával — nem pedig ellene dolgoznak</p>
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center">✅ <strong>Praktikus tippek</strong> az energiaszint növelésére, a vércukorszint csökkentésére és a HbA1c természetes csökkentésére</p>
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center">✅ <strong>Ízletes ételek</strong>, amelyek támogatják a szív egészségét, a testsúlykontrollt és az inzulinérzékenységet</p>
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center">✅ <strong>Bevásárlási tippek</strong> és perctaétrendek a percdennapok megkönnyítésére</p>
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center">✅ <strong>Szakértők által jóváhagyott, tudományosan megalapozott stratégiák</strong>, hogy percden nap jobban érezze magát</p>
+                    <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <figure class="wp-block-image aligncenter size-full">
+                        <img loading="lazy" decoding="async" width="970" height="600" src="{{ 'diabetes_IMAGE4_hu.jpg' | file_url }}"
+                            alt="Egészséges étel cukorbetegeknek">
+                    </figure>
+                    <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <figure class="wp-block-image aligncenter size-full has-custom-border">
+                        <img loading="lazy" decoding="async" width="2400" height="900" src="{{ 'diabetes_IMAGE5_hu.png' | file_url }}"
+                            alt="70%-os kedvezményes bänner" style="border-style:none;border-width:0px;">
+                    </figure>
+                    <figure class="wp-block-image aligncenter size-full">
+                        <img loading="lazy" decoding="async" width="1080" height="1080" src="{{ 'diabetes_IMAGE1_hu.png' | file_url }}"
+                            alt="Termékcsomag fotó">
+                    </figure>
+                    <p class="has-text-align-center has-base-2-color has-text-color has-x-large-font-size"
+                        style="margin-right:0;margin-left:0"><strong>A legegyszerűbb diéta cukorbetegeknek 60 felett</strong></p>
+                    <p class="has-text-align-center has-x-large-font-size"
+                        style="margin-right:var(--wp--preset--spacing--50);margin-left:var(--wp--preset--spacing--50)">
+                        ⭐⭐⭐⭐⭐</p>
+                    <p class="has-text-align-center has-base-2-color has-text-color has-medium-font-size">
+                        <strong>7900 Ft </strong>
+                        <mark style="background-color:rgba(0,0,0,0);color:#e42628;"
+                            class="has-inline-color"><s>23900 Ft</s></mark>
+                        <strong>Megtakarítás: 70%</strong>
+                    </p>
+                    <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <div class="wp-block-buttons has-custom-font-size has-medium-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-db7e7d63"
+                        style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)">
+                        <div class="wp-block-button has-custom-width wp-block-button__width-75">
+                            <a class="wp-block-button__link has-background wp-element-button"
+                                href="/hu/cart/43091192959041:1"
+                                style="border-radius:20px;background-color:#01bc00;box-shadow:var(--wp--preset--shadow--deep);color:#ffffff !important;"><strong style="color:#ffffff !important;">VÁSÁROLJON MOST</strong></a>
+                        </div>
+                    </div>
+                    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center has-large-font-size"
+                        style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+                        <strong>A cukorbetegség kezelése 60 év felett nem kell, hogy megterhelő vagy zavaró legyen.</strong>
+                    </p>
+                    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center has-medium-font-size"
+                        style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+                        Ha eleged van a bonyolult étkezési tervekből, az íztelen ételekből és a folyamatos tépelődésből azon, hogy mit „biztonságos” megenni, ez a csomag neked szól. A Legegyszerűbb diéta cukorbetegeknek 60 felett egy világos, praktikus és tudományosan alátámasztott útmutató, amelyet kifejezetten olyan idősebb felnőtteknek terveztek, akik szeretnék szabályozni a vércukorszintjüket, védeni a szívüket és növelni az energiaszintjüket — anélkül, hogy lemondanának a szeretett ételekről. Azonnali digitális letöltés – ezek e-könyvek (a fizetés befejezése után azonnal letöltheted a terméket a köszönőoldalon, és röviddel ezután egy e-mailt is kapsz a linkkel).</p>
+                    <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+                    <p class="has-text-align-center"
+                        style="padding-right:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
+                        + <strong>BONUS 1</strong>: <strong>Szakácskönyv a 2-es típusú cukorbetegséghez</strong></p>
+                    <p class="has-text-align-center"
+                        style="margin-right:var(--wp--preset--spacing--30);margin-left:var(--wp--preset--spacing--30)">+
+                        <strong>BONUS 2</strong>: <strong>Szakácskönyv és étrend a frissen diagnosztizáltaknak</strong>
+                    </p>
+                    <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+                    <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center has-large-font-size"
+                        style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+                        Kezdjen el okosabban étkezni, érezze magát erősebbnek és éljen jobban – már mától.</p>
+                    <p class="has-text-align-center has-large-font-size"
+                        style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+                        <strong>Görgessen a lap tetejére és kattintson a „VÁSÁROLJON MOST” gombra! Szerezze be a példányát most, mielőtt a kedvezmény véget ér!</strong>
+                    </p>
+                    <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <p class="has-text-align-center has-medium-font-size"
+                        style="padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+                        <strong><em>Rendelje meg most és takarítson meg 70%-ot, mielőtt ez a korlátozott ideig tartó ajánlat lejár.</em></strong>
+                    </p>
+                </div>
+                <!-- REVIEWS GALLERY -->
+                <figure
+                    class="wp-block-gallery aligncenter has-nested-images columns-1 is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex">
+                    <figure class="wp-block-image size-full has-custom-border is-style-default">
+                        <img loading="lazy" decoding="async" width="2000" height="2200" src="{{ 'diabetes_review_1_hu.jpg' | file_url }}"
+                            alt="Vásárlói vélemény 1"
+                            style="border-color:#fec259;border-width:2px;border-style:solid;box-shadow:var(--wp--preset--shadow--natural);">
+                    </figure>
+                    <figure class="wp-block-image size-full has-custom-border">
+                        <img loading="lazy" decoding="async" width="2000" height="2200" src="{{ 'diabetes_review_2_hu.jpg' | file_url }}"
+                            alt="Vásárlói vélemény 2"
+                            style="border-color:#fec259;border-width:2px;border-style:solid;box-shadow:var(--wp--preset--shadow--natural);">
+                    </figure>
+                    <figure class="wp-block-image size-full has-custom-border is-style-default">
+                        <img loading="lazy" decoding="async" width="2000" height="2200" src="{{ 'diabetes_review_3_hu.jpg' | file_url }}"
+                            alt="Vásárlói vélemény 3"
+                            style="border-color:#fec259;border-width:2px;border-style:solid;box-shadow:var(--wp--preset--shadow--natural);">
+                    </figure>
+                    <figure class="wp-block-image size-full has-custom-border is-style-default">
+                        <img loading="lazy" decoding="async" width="2000" height="2200" src="{{ 'diabetes_review_4_hu.jpg' | file_url }}"
+                            alt="Vásárlói vélemény 4"
+                            style="border-color:#fec259;border-width:2px;border-style:solid;box-shadow:var(--wp--preset--shadow--natural);">
+                    </figure>
+                </figure>
+                <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+            </div><!-- .entry-content -->
+        </main>
+    </div><!-- .wp-site-blocks -->
+</body>
+</html>
