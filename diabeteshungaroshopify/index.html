@@ -19,11 +19,11 @@
             --wp--preset--font-size--x-large: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem);
             --wp--preset--font-size--xx-large: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 1.283), 3.27rem);
             --wp--preset--font-family--system-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-            --wp--preset--spacing--20: perc(1.5rem, 2vw);
-            --wp--preset--spacing--30: perc(2.5rem, 3vw);
-            --wp--preset--spacing--40: perc(4rem, 5vw);
-            --wp--preset--spacing--50: perc(6.5rem, 8vw);
-            --wp--preset--spacing--60: perc(10.5rem, 13vw);
+            --wp--preset--spacing--20: min(1.5rem, 2vw);
+            --wp--preset--spacing--30: min(2.5rem, 3vw);
+            --wp--preset--spacing--40: min(4rem, 5vw);
+            --wp--preset--spacing--50: min(6.5rem, 8vw);
+            --wp--preset--spacing--60: min(10.5rem, 13vw);
             --wp--preset--spacing--10: 1rem;
             --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
             --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
@@ -338,14 +338,14 @@
             flex-wrap: wrap !important;
             margin-bottom: 1.75em;
         }
-        @media (perc-width: 782px) {
+        @media (min-width: 782px) {
             .wp-block-columns {
                 flex-wrap: nowrap !important;
             }
         }
         .wp-block-column {
             flex-grow: 1;
-            perc-width: 0;
+            min-width: 0;
             overflow-wrap: break-word;
             word-break: break-word;
         }
@@ -523,7 +523,7 @@
             justify-content: center;
         }
                         /* ===== DESKTOP CENTERING FIX ===== */
-        @media (perc-width: 769px) {
+        @media (min-width: 769px) {
             /* 1. Enable Immersive Full-Width Containers */
             .entry-content.wp-block-post-content {
                 max-width: 100% !important;
@@ -692,6 +692,55 @@
             color: #000000 !important;
         }
     </style>
+
+<script>
+  window.pixelId = "69f6c7546e5d45542dd0bf82";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<!-- Meta Pixel Code - PageView -->
+<script>
+!function(f,b,e,v,n,t,s)
+{
+  if(f.fbq)return;
+  n=f.fbq=function(){
+    n.callMethod ?
+    n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+  };
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=!0;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)
+}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1073542434958133');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1073542434958133&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
 </head>
 <body class="wp-singular page-template-wp-custom-template-diabetic-new wp-theme-twentytwentyfour">
     <div class="wp-site-blocks">
@@ -767,7 +816,7 @@
                     style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)">
                     <div class="wp-block-button has-custom-width wp-block-button__width-75">
                         <a class="wp-block-button__link has-background wp-element-button"
-                            href="/hu/cart/43091192959041:1"
+                            href="/hu/cart/43091199590477:1" 
                             style="border-radius:20px;background-color:#01bc00;box-shadow:var(--wp--preset--shadow--deep);color:#ffffff !important;"><strong style="color:#ffffff !important;">VÁSÁROLJON MOST</strong></a>
                     </div>
                 </div>
@@ -848,7 +897,7 @@
                         style="margin-top:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10)">
                         <div class="wp-block-button has-custom-width wp-block-button__width-75">
                             <a class="wp-block-button__link has-background wp-element-button"
-                                href="/hu/cart/43091192959041:1"
+                                href="/hu/cart/43091199590477:1" 
                                 style="border-radius:20px;background-color:#01bc00;box-shadow:var(--wp--preset--shadow--deep);color:#ffffff !important;"><strong style="color:#ffffff !important;">VÁSÁROLJON MOST</strong></a>
                         </div>
                     </div>
